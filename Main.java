@@ -52,7 +52,7 @@ class History implements User{
     public void displayHistory(){
         int length = history.length - 1;
         for(int c = 0; c <= length; c++){
-            System.out.println(history[1]);
+            System.out.println(history[c]);
         }
     }
 }
@@ -62,15 +62,12 @@ class TNT implements Product{
     double price = 3.99;
     String rating = "6/10";
     public void displayName(String name){
-        this.name = name;
         System.out.printf("Название товара: %s.", name);
     }
     public void displayPrice(double price){
-        this.price = price;
         System.out.printf("Цена динамита: %f.$", price);
     }
     public void displayRating(String rating){
-        this.rating = rating;
         System.out.printf("Рейтинг данного товара: %s.", rating);
     }
 }
@@ -80,15 +77,12 @@ class verticalBandSawMakitaLB1200F900W implements Product{
     double price = 19999;
     String rating = "9/10";
     public void displayName(String name){
-        this.name = name;
         System.out.printf("Название товара: %s.", name);
     }
     public void displayPrice(double price){
-        this.price = price;
         System.out.printf("Цена динамита: %f.$", price);
     }
     public void displayRating(String rating){
-        this.rating = rating;
         System.out.printf("Рейтинг данного товара: %s.", rating);
     }
 }
@@ -98,15 +92,12 @@ class pilingMachineBM811M01 implements Product{
     double price = 145000;
     String rating = "7/10";
     public void displayName(String name){
-        this.name = name;
         System.out.printf("Название товара: %s.", name);
     }
     public void displayPrice(double price){
-        this.price = price;
         System.out.printf("Цена динамита: %f.$", price);
     }
     public void displayRating(String rating){
-        this.rating = rating;
         System.out.printf("Рейтинг данного товара: %s.", rating);
     }
 }
@@ -155,6 +146,7 @@ public class Main {
         History history = new History();
         Address address = new Address();
         Cheque cheque = new Cheque();
+        history.displayHistory();
 
         if("TNT".equals(name)){
             cheque.start();
