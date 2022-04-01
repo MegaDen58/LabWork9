@@ -33,7 +33,7 @@ class Balance implements User{
     public void displayPassword(String login){
         System.out.printf("Пароль: %s", login);
     }
-    public void displayAddress(){
+    public void displayBalance(){
         System.out.printf("Баланс: %d$", randNumber.nextInt(500));
     }
 }
@@ -146,7 +146,7 @@ public class Main {
         History history = new History();
         Address address = new Address();
         Cheque cheque = new Cheque();
-        history.displayHistory();
+        balance.
 
         if("TNT".equals(name)){
             cheque.start();
